@@ -38,10 +38,11 @@ header{
     position: relative;
 }
 #logo{
-    position: relative;
-    width:100%;
+    display: flex;
+    width:200px;
     height:12rem;
-    margin-top: -48px;
+    margin-top: -170px;
+    
 
 }
 
@@ -53,7 +54,7 @@ header{
     font-size:20px;
     font-family: "Roboto Condensed", sans-serif;
     position: relative;
-    right:-50%;
+    right:-150%;
     bottom:-25%;
     border-radius: 6px;
     z-index: 2;
@@ -66,6 +67,23 @@ header{
     color:#EEEEEE;
     background-color: #1c93c9;
 }
+.home{
+    text-decoration: none;
+    color: #3D3B40;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: -19%;
+    position: relative;
+    left:-13%;
+    bottom: -23%;
+    right: -7%;
+
+}
+.home:hover{
+    color: #176d96;
+    text-shadow: 1px 1px 7px rgb(204, 204, 204);
+}
+
 .product{
     text-decoration: none;
     color: #3D3B40;
@@ -73,7 +91,7 @@ header{
     padding: 10px;
     margin-left: -19%;
     position: relative;
-    left:-9%;
+    left:15%;
     bottom: -23%;
     right: -7%;
 
@@ -88,7 +106,7 @@ header{
     font-size: 20px;
     padding: 10px;
     position: relative;
-    left:-3%;
+    left:24%;
     bottom: -23%;
     right: -17%;
 }
@@ -103,7 +121,7 @@ header{
     padding: 10px;
     position: relative;
     bottom: -23%;
-    right: -7%;
+    right: -30%;
 
 }
 .company:hover{

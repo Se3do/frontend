@@ -183,6 +183,7 @@ body {
 .contact:hover{
     color:#EEEEEE;
     background-color:gray;
+    cursor:pointer;
 }
 
 .product{

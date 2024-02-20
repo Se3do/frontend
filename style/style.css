@@ -45,71 +45,53 @@ header{
 
 }
 
-.contact{
+.cont {
+    display: flex;
+    justify-content: center; /* Align buttons horizontally */
+}
+
+.cont button:nth-child(1),
+.cont button:nth-child(2),
+.cont button:nth-child(3){
+    padding: 30px 20px; /* Adjust padding as needed */
+    margin: 0 10px; /* Add spacing between buttons */
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #3D3B40;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for smoother hover effect */
+}
+
+.cont button:hover {
+    color: #176d96; 
+    text-shadow: 1px 1px 7px rgb(204, 204, 204);
+}
+
+
+.cont button:nth-child(4) {
+    display: flex;
     text-align: center;
-    width:9rem;
-    justify-content: center;
-    height: 2.9rem;
+    justify-content: center; 
     font-size:20px;
     font-family: "Roboto Condensed", sans-serif;
-    position: relative;
-    right:-50%;
-    bottom:-25%;
     border-radius: 6px;
     z-index: 2;
     color: #176d96;
     border: 1px solid #176d96;
     box-shadow: 2px 2px 7px grey;
-
+    height: 3rem;
+    width: 9rem;
+    padding: 9px 20px;
+    margin-top: 20px;
 }
-.contact:hover{
+
+
+.cont button:nth-child(4):hover{
     color:#EEEEEE;
     background-color: #1c93c9;
 }
-.product{
-    text-decoration: none;
-    color: #3D3B40;
-    font-size: 20px;
-    padding: 10px;
-    margin-left: -19%;
-    position: relative;
-    left:-9%;
-    bottom: -23%;
-    right: -7%;
 
-}
-.product:hover{
-    color: #176d96;
-    text-shadow: 1px 1px 7px rgb(204, 204, 204);
-}
-.impact{
-    text-decoration: none;
-    color: #3D3B40;
-    font-size: 20px;
-    padding: 10px;
-    position: relative;
-    left:-3%;
-    bottom: -23%;
-    right: -17%;
-}
-.impact:hover{
-    color: #176d96;
-    text-shadow: 1px 1px 7px rgb(204, 204, 204);
-}
-.company{
-    text-decoration: none;
-    color: #3D3B40;
-    font-size: 20px;
-    padding: 10px;
-    position: relative;
-    bottom: -23%;
-    right: -7%;
-
-}
-.company:hover{
-    color: #176d96;
-    text-shadow: 1px 1px 7px rgb(204, 204, 204);
-}
 .row{
     height:300px;
 }
@@ -137,6 +119,7 @@ header{
     color: #176d96;
     border: 1px solid #176d96;
     box-shadow: 2px 2px 7px grey;
+    background-color: #EEEEEE;
 }
 #Yes:hover{
     color:#EEEEEE;
@@ -198,7 +181,46 @@ header{
 .dropdown-content ul{
     list-style-type: none;
 }
+.sec1{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 100%;
+    background-color: #EEEEEE;
+    padding:1rem; 
 
+
+}
+.sec2{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 100%;
+    background-color:#EEEEEE;
+    padding:1rem; 
+
+
+}
+.sec3{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    width: 100%;
+    background-color:#1c93c9;
+    padding:1rem; 
+
+
+}
+.sec4{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    width: 100%;
+    background-color: gray;
+    padding:1rem; 
+
+
+}
 
 
 @media only screen and (max-width:1024px){
