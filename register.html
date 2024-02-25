@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>لسه بنفكر</title>
-    <link rel="shortcut icon" href="images/15.png" type="image/x-icon">
+    <title>Hire me | Register</title>
+    <link rel="shortcut icon" href="images/2.png" type="image/x-icon">
     <link rel="stylesheet" href="style/register.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,32 +21,33 @@
 <header>
     <div class="head">
         <img src="images/2.png" alt="" class="logo">
-        <a href="index.html" class="product"><strong>Home</strong></a>
-        <a href="index.html" class="product"><strong>PRODUCT</strong></a>
-        <a href="index.html" class="impact"><strong>IMPACT</strong></a>
-        <a href="index.html" class="company"><strong>COMPANY</strong></a>
-        <a href="index.html"><button class="contact">Contact us</button></a>
-
-        <div class="dropdown">
-            <img src="images/122.png" alt="" id="user">
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="login.html">Log in</a></li>
-                    <li><a href="register.html">Register</a></li>
-                </ul>
-            </div>
+        <div class="cont">
+            <button onclick="navigateAndScrollToSection('http://127.0.0.1:5500/index.html', 'home')">HOME</button>
+            <button onclick="navigateAndScrollToSection('http://127.0.0.1:5500/index.html', 'product')">PRODUCT</button>
+            <button onclick="navigateAndScrollToSection('http://127.0.0.1:5500/index.html', 'impact')">IMPACT</button>
+            <a href="about-us.html" id="aboutUsLink">
+                <button>ABOUT US</button></a>
+              <button class="contact"><a href="mailto:Hireme1@gmail.com" id="contact">Contact us</a></button>
+        
+        
+        <script>
+        function navigateAndScrollToSection(pageUrl, sectionId) {
+          window.location.href = pageUrl + '#' + sectionId;}
+        </script>
+            
+        </div>
         </div>
 </header>
 
+
 <body>
 
-    </div>
     <main>
-        <div id="register"></div>
-
-        <div id="picture"><img src="images/1.png">
+        <div id="register">
+            <img src="images/1.png" alt="">
         </div>
-        <div id="register-div">
+
+        <section id="register-div">
             <h2>Register</h2>
             <form action="" id="registerForm">
                 <div>
@@ -54,18 +55,44 @@
                     <input type="text" id="lname" placeholder="Last Name" autocomplete="off" required />
                 </div>
                 <input type="email" id="email" placeholder="Email" autocomplete="off" required />
-                <input type="number" id="age" placeholder="age" autocomplete="off" required />
-
+                <input type="number" id="age" placeholder="Age" autocomplete="off" required />
+            
                 <input type="password" id="pass" placeholder="Password" autocomplete="off" required />
-                <input type="password" id="cpass" placeholder="Confirm Password" autocomplete="off"
-                    required />
+                <input type="password" id="cpass" placeholder="Confirm Password" autocomplete="off" required />
+            
+                
+                 <select name="jobs" id="jobStatus">
+                <option value="option">what are u looking for?</option>
+                 <option value="look">looking for a job</option>
+                 <option value="hire">looking to hire someone</option> 
+                 </select>
+                
             </form>
+            
             <button type="submit" id="reg">Register</button>
-            <span style="color: red">Already Have Account? </span><a href="login.html"">Login</a>
-    </div>
+            <div id="loginsumit">
+            <span style="color: red" >Already Have Account? </span><a href="login.html">Login</a></div>
+    </section>
 </main>
 
-<script type="module" src="./Script/Register.js"></script>
+<script type="module" src="./Script/Register.js">
+</script>
+   <script type="text/javascript">
+    function validateForm() {
+    var selectElement = document.getElementById('jobStatus');
+    var selectedValue = selectElement.value;
+    
+    if (selectedValue === "option") {
+        alert("Please select an option!");
+        return false;
+    } else if (selectedValue === "look" || selectedValue === "hire") {
+        // Handle validation for "looking for a job" and "looking to hire someone" options
+        alert("You selected: " + selectedValue);
+        // Here, you can perform additional validation if needed
+        return true;
+    }
+     }
+    </script>
 </body>
 
 </html>

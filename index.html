@@ -1,82 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/32b721850a.js" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="style/style.css" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/32b721850a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
+  <title>Hire me | Home</title>
+  <link rel="shortcut icon" href="images/2.png" type="image/x-icon">
 </head>
+
 <body>
-    <header>
-        <div class="head" class="container-fluid">
-            <div class="text-center">
+  <header>
+    <div class="head" class="container-fluid">
+      <div class="text-center">
         <div><img src="images/logo2.png" alt="logo" class=".mx-auto" id="logo"></div>
+      </div>
+      <div class="cont-user">
+      <div class="cont">
+        <button onclick="scrollToSection('product')">PRODUCT</button>
+        <button onclick="scrollToSection('impact')">IMPACT</button>
+        <a href="about-us.html"><button onclick="scrollToSection('company')">ABOUT US</button></a>
+        <button class="contact"><a href="mailto:Hireme1@gmail.com" id="contact">Contact us</a></button>
+      </div>
+      <a href="login.html"><img src="images/user.png" alt="" id="user"></a>
+      </div>
+      <div id="container">
+        <h2>Hello, user</h2>
+      </div>
+
+        
+
     </div>
-            
-                <div class="cont">
-                    <button onclick="scrollToSection('product')">PRODUCT</button>
-                    <button onclick="scrollToSection('impact')">IMPACT</button>
-                    <button onclick="scrollToSection('company')">COMPANY</button>
-                    <button onclick="scrollToSection('contact')">Contact us</button>
-                </div>
-                
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+  </header>
+  <main>
+    <div class="welcome2">
+      <h1 class="welcome">Welcome to Hire Me !</h1>
+    </div>
+    <div class="divlook">
+      <img src="images/apply2.jpg" alt="man thinking" class="job">
+      <div class="divyes" id="lookforajob">
+        <h1 class="text-left" id="text">Are you looking for a job?</h1><br>
+        <a href="index2.html" id="Yes" class="btn btn-primary">Find one now !</a>
+      </div>
+    </div>
     
-        <div class="dropdown">
-            <img src="images/user.png" alt="" id="user">
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="login.html">Log in</a></li>
-                    <li><a href="register.html">Register</a></li>
-                </ul>
+
+    <section class="sec2" id="product">
+      <div class="section-content2">
+        <div class="paragraph2">
+          <h1 id="full-text">The premier employment platform<br>tailored for individuals seeking<br>entry-level and low-wage jobs.</h1>
+        </div>
+        <img src="images/business.png" alt="">
+
+      </div>
+    </section>
+
+    <section class="sec3" id="impact">
+      <div class="section-content3">
+        <img src="images/goals2.png" alt="">
+        <div id="paragraph">
+          <h3 id="purpose">OUR PURPOSE</h3>
+        <p>We aspire to make a meaningful difference in the lives of millions by facilitating access<br>
+           to meaningful employment and unlocking new pathways to success and fulfillment.<br>
+            We believe that everyone, regardless of background or circumstance,should have,<br>
+             equal access to employment opportunities.Our platform is designed to be inclusive,<br>
+              user-friendly, and accessible to individuals with diverse abilities and needs.<br>
+              This project aims to help: decent work and economic growth, industry and innovation<br>
+               and gender equality. </p>
             </div>
+    </section>
+
+    <footer>
+      <div id = "logo-contact">
+        <a href=""><img src="images/logo2.png" alt="Company-Logo"></a>
+        <div class="info">
+          <p>Egypt / Hurghada</p>
+          <a href="Hireme1@gmail.com" id="mail">Hireme1@gmail.com</a>
+          <p>+20 11 5078 9589</p>
+          <a id="contact-us" href="mailto:Hireme1@gmail.com">Contact Us</a>
         </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </div>
+      <div class="follow-us">
+        <h4>Follow our page for the latest information</h4>
+        <a id="linkedin" href="" target="_blank">
+          Follow us on
+          <img id = "linkedin-logo"src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png?20210220164014">
+        </a>
+      </div>
+    </footer>
 
-    </header>
-    <main>
-        <div class="welcome2">
-        <h1 class="welcome">Welcome to Hire Me !</h1></div>
-       <div class="divlook">
-        <img src="images/apply2.jpg" alt="man thinking" class="job">
-        <div class="divyes" id="lookforajob">
-            <h1 class="text-left" id="text">Are you looking for a job?</h1><br>
-            <a href="index2.html" id="Yes" class="btn btn-primary">Find one now!</a>
-        </div>
-               </div>
-       <section class="sec1" id="product">
-        <div class="section-content1">bjbjbj</div>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 
-    <section class="sec2" id="impact">
-        <div class="section-content2">bjbjbj</div>
-    </section>
-
-    <section class="sec3" id="company">
-        <div class="section-content3">bjbjbj</div>
-    </section>
-
-    <section  class="sec4" id="contact">
-        <div class="section-content4">bjbjbj</div>
-    </section>
-    
-       
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    </main>
+  </main>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-        function scrollToSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+    function scrollToSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+  <script type="module" src="./Script/index.js"></script>
 </body>
+
 </html>
