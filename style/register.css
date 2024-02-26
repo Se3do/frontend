@@ -14,7 +14,7 @@ body {
 .head {
     background-color: #1891c8;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     width: 240px;
     display: flex;
     flex-direction: column;
@@ -56,6 +56,11 @@ body {
 
 }
 
+.contact a{
+    text-decoration: none;
+    color: #046a99;
+}
+
 .cont button {
     font-size: 20px;
     align-items: center;
@@ -82,7 +87,7 @@ body {
     border-radius: 5px;
     margin-bottom: 10px;
     font-weight: 400;
-    
+    text-decoration :white;   
 }
 
 .cont button:nth-child(5):hover {
@@ -110,12 +115,11 @@ main {
 /* register form div */
 #register-div {
     width: 100%;
-    height: 1000px;
+    height: 100%;
     padding: 1rem 1rem 0 1rem;
     text-align: center;
     color: #393E46;
     min-width: 350px;
-    
 
 }
 
@@ -140,6 +144,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: auto;
 
 }
 

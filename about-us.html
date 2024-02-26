@@ -23,9 +23,16 @@
                 <div class="cont-user">
                 <div class="cont">
                     <a href="index.html"><button>HOME</button></a>
-                    <button onclick="scrollToSection('product')">PRODUCT</button>
-                    <button onclick="scrollToSection('impact')">IMPACT</button>
+                    <button onclick="navigateAndScrollToSection('https://hireme1.net/index.html', 'product')">PRODUCT</button>
+                    <button onclick="navigateAndScrollToSection('https://hireme1.net/index.html', 'impact')">IMPACT</button>
                     <button class="contact"><a href="mailto:Hireme1@gmail.com" id="contact">Contact us</a></button>
+
+                    <script>
+                        function navigateAndScrollToSection(pageUrl, sectionId) {
+                            // Navigate to the other page
+                            window.location.href = pageUrl + '#' + sectionId;
+                        }
+                        </script>
                 </div>
                 
                 <a href="login.html"><img src="images/user.png" alt="" id="user"></a>
