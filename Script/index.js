@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getFirestore, query, collection, where, doc, setDoc, getDocs, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -21,38 +22,31 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const db = getFirestore(app);
+const user = auth.currentUser;
 
+// Listener for Login/Logout
 onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/auth.user
-    window.location.href = "../index.html";
+    document.getElementById('container').style.display = 'flex'
+    document.getElementById('user').style.display = 'none'
+
+    const q = query(collection(db, "users"), where("Mail", "==", user.email))
+    const querySnapshot = getDocs(q)
+
+    querySnapshot.forEach((doc) => {
+      console.log(doc.Mail)
+      const h2 = document.getElementById('h2g')
+      h2.innerHTML = 'Hello, ' + doc.First_Name;
+    })
     const uid = user.uid;
     console.log(uid);
     // ...
   } else {
     // User is signed out
+    document.getElementById('container').style.display = 'none'
+    document.getElementById('user').style.display = 'block'
   }
 });
-
-// ################################################################# //
-const loginBtn = document.querySelector('#loginbtn')
-
-const handleLogin = () => {
-  loginBtn.addEventListener('click', async (e) => {
-    console.log('Welcome, ', document.getElementById('email').value, document.getElementById('password').value)
-    signInWithEmailAndPassword(auth, document.getElementById('email').value, document.getElementById('password').value)
-      .then((userCredential) => {
-        // Signed up 
-        const user = userCredential.user;
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // ..
-      });
-  })
-}
-
-handleLogin()

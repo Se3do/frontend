@@ -11,49 +11,124 @@ body {
     padding: 0;
     display: flex;
 }
+.head {
+    background-color: #1891c8;
+    padding: 0;
+    height: 100%;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+}
 
+#user{
+    position: flex;
+    align-self: center;
+    width: 70px;
+    margin-bottom: 30px;
+    height: 70px;
+    margin-left: 80px;
+
+}
+#user:hover{
+    cursor:pointer
+}
+
+
+
+.logo {
+    align-self: center;
+    height: 70px; 
+    width: 150px; 
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    flex-shrink: 0; 
+    padding: 0; 
+}
+ 
+.cont {
+    display: flex;
+    height:100vh;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons horizontally */
+    justify-content: space-around ;
+
+}
+
+.cont button {
+    font-size: 20px;
+    align-items: center;
+    color: white;
+    background-color: #1891c8;
+    border: 0;
+    font-weight: 700;
+
+}
+
+.cont button:hover {
+    color: rgb(56, 56, 56);
+}
+
+.cont button:nth-child(5) {
+    background-color: #EEEEEE;
+    color: #1891c8;
+    border-radius: 22px;
+    text-align: center;
+    width: 150px;
+    border: 1px solid grey;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    
+}
+
+.cont button:nth-child(5):hover {
+    color: #EEEEEE;
+    background-color: rgb(56, 56, 56);
+    cursor: pointer;
+    border: none;
+}
+   
+
+main {
+    border: none;
+    width:700px ;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+}
 
 /* register form div */
 #register-div {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px 0 0 10px;
-    background-color:#F7F7F7;
+    width: 100%;
+    height: 1000px;
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+    color: #393E46;
+    min-width: 350px;
+    
 
 }
 
 #register{
-    width: 50%;
+    position: relative;
+    width: 100%;
     height: 100%;
-    border-radius: 10px 0 0 10px;
-    color: #393E46;
+    padding-top:70px ;
+    padding-left:40px;
+    background-color: #EEEEEE;
+    
 }
 
-#picture{
-    width: 50%;
-    height: 100%;
-    border-radius: 0px 10px 10px 0px;
-    background-color: #EEEEEE;
-}
-#picture>img {
-    
-    display: flex;
-    width: auto;
-    height: auto;
-    border-radius: 1 10px 10px 0;
-    margin-top: 25%;
-    margin-left: 10%;
-    
-}
 
 #register-div h2 {
     text-align: center;
@@ -63,8 +138,9 @@ body {
 #register-div form {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+
 }
 
 #register-div form div {
@@ -90,7 +166,7 @@ body {
     outline: none;
 }
 
-#register-div form button {
+#register-div>button {
     width: 50%;
     margin-top: 10px;
     padding: 0.5rem;
@@ -102,147 +178,80 @@ body {
     font-weight: bold;
 }
 
-/* login form div */
-.head {
-    background-color: #1891c8;
-    padding: 0;
-    height: 100vh;
-    width: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#user{
-    position: flex;
-    align-self: center;
-    width: 70px;
-    margin-bottom: 30px;
-    height: 70px;
-    margin-left: 80px;
-
-}
-#user:hover{
-    cursor:pointer
-}
-
-.dropdown-content a{
-    text-decoration: none;
-    color: white;
-}
-.dropdown-content{
-    display: none;
-    
-}
-.dropdown:hover{
-    .dropdown-content{
-        display: block;
-    }
-}
-.dropdown-content a:hover{
-    color: gray;
-    text-shadow: 1px 1px 7px rgb(204, 204, 204);
-}
-.dropdown-content li{
-    padding: 7px 4px;
-    margin-left: 80px;
-}
-
-.dropdown-content ul{
-    list-style-type: none;
-}
-
-
-.logo {
-    align-self: center;
-    height: 70px; /* Decreased height */
-    width: 150px; /* Decreased width */
-    margin-top: 30px;
-    border-radius: 5px;
-    background-color: #EEEEEE;
-    flex-shrink: 0; /* Prevent the logo from shrinking */
-    padding: 0; 
-}
-  
-
-.contact{
-    background-color: #EEEEEE;
-    color: #1891c8;
-    border-radius: 22px;
-    text-align: center;
-    width:150px;
-    border: 1px solid grey;
-    justify-content: center;
-    height: 50px;
-    font-size:20px;
-    margin-left: 45px;
-
-    border-radius: 5px;
-
-}
-.contact:hover{
-    color:#EEEEEE;
-    background-color:gray;
-}
-
-.product{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    align-self: center;
-
-}
-.product:hover{
-    color:gray;
-    text-shadow: 1px 1px 7px rgb(204, 204, 204);
-
-}
-
-
-.impact{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    align-self: center;
-    }
-
-.impact:hover{
-        color: gray;
-        text-shadow: 1px 1px 7px rgb(204, 204, 204);
-    }
-
-.company{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    align-self: center;
-}
-
-.company:hover{
-        color: gray;
-        text-shadow: 1px 1px 7px rgb(204, 204, 204);
-    }
-
-    
-
-main {
-    border: none;
-    width: 45%;
-    height: 60%;
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    background-color: #F7F7F7;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    display: flex;
-}
 
 
 
-#register-div>form>button:hover {
-    background-color: #92C7CF;
+#register-div>button:hover {
+    background-color: #046a99;
     cursor: pointer;
 
 }
+
+
+
+@media screen and (max-width : 670px) {
+    body {
+        height: fit-content;
+    }
+
+
+    main {
+        border: none;
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #F7F7F7;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        display: flex;
+        flex-direction: column;
+    }
+  
+
+    #register-div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        z-index: 10;
+    }
+
+    #register-div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px 0 0 10px;
+        background-color: #F7F7F7;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+}
+/* Style for the select element */
+select#jobStatus {
+    padding: 10px; /* Adjust padding for better appearance */
+    font-size: 14px; /* Set font size */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+    cursor: pointer; /* Show pointer cursor */
+    width: 80%;
+  }
+  
+  /* Style for select options */
+  select#jobStatus option {
+    padding: 10px; /* Adjust padding for better appearance */
+  }
+  
+  /* Style for select options on hover */
+  select#jobStatus option:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  

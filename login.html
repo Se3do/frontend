@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>لسه بنفكر</title>
-    <link rel="shortcut icon" href="images/15.png" type="image/x-icon">
+    <title>Hire me | Login</title>
+    <link rel="shortcut icon" href="images/2.png" type="image/x-icon">
     <link rel="stylesheet" href="style/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,18 +21,21 @@
 <header>
     <div class="head">
         <img src="images/2.png" alt="" class="logo">
-        <a href="index.html" class="product"><strong>Home</strong></a>
-        <a href="" class="impact"><strong>IMPACT</strong></a>
-        <a href="" class="company"><strong>COMPANY</strong></a>
-        <button herf="" class="contact"><strong>Contact us</strong></button>
-        <div class="dropdown">
-            <img src="images/122.png" alt="" id="user">
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="login.html">Log in</a></li>
-                    <li><a href="register.html">Register</a></li>
-                </ul>
-            </div>
+        <div class="cont">
+            <button onclick="navigateAndScrollToSection('http://127.0.0.1:5500/index.html', 'home')">HOME</button>
+            <button onclick="navigateAndScrollToSection('http://127.0.0.1:5500/index.html', 'product')">PRODUCT</button>
+            <button onclick="navigateAndScrollToSection('http://127.0.0.1:5500/index.html', 'impact')">IMPACT</button>
+            <a href="about-us.html" id="aboutUsLink">
+                <button>ABOUT US</button></a>
+              <button class="contact"><a href="mailto:Hireme1@gmail.com" id="contact">Contact us</a></button>
+        
+        
+        <script>
+        function navigateAndScrollToSection(pageUrl, sectionId) {
+          window.location.href = pageUrl + '#' + sectionId;}
+        </script>
+            
+        </div>
         </div>
 </header>
 

@@ -8,6 +8,7 @@
 
 body{
     height:100vh;
+   
 }
 header{
     width:100%;
@@ -22,19 +23,18 @@ header{
     max-height: fit-content;
     justify-content:space-around;
     display: flex;
-    min-width: 1140px;
+    min-width: 1365px;
 }
 .cont{
     width: fit-content;
     display: flex;
     position: relative;
+
 }
 #user{
     float:right;
     height: 7rem;
     position: relative;
-    margin-right: -5%;;
-    
 }
 #logo{
     position: relative;
@@ -43,11 +43,6 @@ header{
     margin-top: -48px;
 
 }
-#contact{
-    text-decoration: none;
-    color:#176d96;
-}
-
 
 .cont {
     display: flex;
@@ -59,7 +54,7 @@ header{
 .cont button:nth-child(3){
     padding: 30px 20px; /* Adjust padding as needed */
     margin: 0 10px; /* Add spacing between buttons */
-    font-size: 20px; /* Adjust font size as needed */
+    font-size: 18px; /* Adjust font size as needed */
     font-weight: bold;
     color: #3D3B40;
     border: none;
@@ -73,11 +68,11 @@ header{
 }
 
 
-.cont button:nth-child(4)  {
+.cont button:nth-child(4) {
     display: flex;
     text-align: center;
     justify-content: center; 
-    font-size:20px;
+    font-size:18px;
     font-family: "Roboto Condensed", sans-serif;
     border-radius: 6px;
     z-index: 2;
@@ -87,11 +82,12 @@ header{
     height: 3rem;
     width: 9rem;
     padding: 9px 20px;
-    margin: 0 10px;
     margin-top: 20px;
-    
 }
-
+#contact{
+    text-decoration: none;
+    color: #176d96;
+}
 
 .cont button:nth-child(4):hover{
     #contact{
@@ -102,59 +98,7 @@ header{
 .row{
     height:300px;
 }
-.job{
-    margin-left: 380px;
-    height: 280px;
-    margin-top: 30px;
-}
-#lookforajob{
-    margin-top: 110px;
-    margin-right: 140px;
-}
-#Yes{
-    margin-top: 5px;
-    margin-left:105px;
-    text-align: center;
-    width:9rem;
-    justify-content: center;
-    height: 45px;
-    font-size:20px;
-    font-family: "Roboto Condensed", sans-serif;
-    position: relative;
-    border-radius: 6px;
-    z-index: 2;
-    color: #176d96;
-    border: 1px solid #176d96;
-    box-shadow: 2px 2px 7px grey;
-    background-color: #EEEEEE;
-}
-#Yes:hover{
-    color:#EEEEEE;
-    background-color: #1c93c9;
 
-}
-.divlook{
-    display: flex;
-    overflow:visible;
-    height:400px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: -8%;
-    min-width: 764px;
-    left:-9rem;
-}
-.welcome2{
-    min-width: 764px;
-}
-.welcome{
-    padding: 5%;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 60px;
-    color: #176d96;
-    text-shadow: 3px 3px  rgb(160, 160, 160);
-}
 
 #logo:hover{
     cursor: pointer;
@@ -164,90 +108,86 @@ header{
 
 }
 
-.sec1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
+.about{
+    display:flex;
+    position: absolute;
+    bottom:0;
+    left:0;
     width: 100%;
-    min-width: 1140px;
-    background-color: #EEEEEE;
-    padding:1rem; 
+    justify-content: space-around;
+}
+.about img{
+    height:7rem;
+}
+.about div{
+    margin:80px;
+}
+.about .box{
+
+    /*background-color: rgba(34, 40, 49,0.1);*/
+    height:17rem;
+    width:15rem;
     text-align: center;
-
-
+    border-radius: 5px;
 }
-.section-content2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.section-content2 img{
-    height:25rem;
-    float: right;
-    margin-right: -8rem;
-}
-.section-content3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.section-content3 img{
-    height:19rem;
-    float: left;
-}
-#purpose{
-    line-height: 70px;
-}
-#full-text{
+#about-us{
+    color:black;
     text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+#contributers{
+    color:black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.contain{
+    min-width: 1350px;
+    height:30rem;
+    position: relative;
+    width: 100vw;
+}
+.cont-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture{
+    border-radius: 50%;
+    margin-top: 1rem;
+
+}
+.name{
+    margin-top: 14px;
+    border: none;
+    color: #222831;
+    background-color: white;
+}
+.github{
+    color: #222831;
+}
+.email{
+    font-weight: 500;
+    font-size: 15px;
     line-height: 60px;
 }
-
-.sec2{
-    display: flex;
-    justify-content: space-around;
-    height: 300px;
-    width: 100%;
-    min-width: 1140px;
-    background-color:#EEEEEE;
-    padding:1rem; 
-
-
-}
-.sec3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 100%;
-    min-width: 1140px;
-    background-color:#1c93c9;
-    padding:1rem; 
-    text-align: center;
-    color: #ffffff;
-    
+#contact{
+    border: #176d96;
 }
 
-#container{
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
 
-#container h2{
-    margin: 0;
-    margin-left: 150px;
-}
-
+/* ########################### */
 footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 200px;
-    width: 100%;
-    min-width: 1140px;
+    width: 101.2%;
+    min-width: 1350px;
     background-color: #222831;
     padding:1rem 2rem;
     padding-left: 1rem;
@@ -331,37 +271,4 @@ footer{
 .follow-us h4 {
     margin-bottom: 20px;
     color: #fff;
-}
-.cont-user{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#paragraph{
-    margin-left: 3rem;
-}
-
-@media only screen and (max-width:1024px){
-    .divlook{
-        margin-right: -11rem;
-    }
-    .welcome{
-        margin-right: -11rem;
-    }
-}
-
-@media only screen and (max-width:768px){
-    .divlook{
-        margin-right: -30rem;
-    }
-    .welcome{
-        margin-right: -25rem;
-    }
-}
-@media only screen and (max-width:540px){
-    .divlook{
-        margin-right: -43rem;
-    }
-
 }

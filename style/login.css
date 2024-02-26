@@ -21,7 +21,7 @@ body {
     width: 240px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-around ;
 }
 
 #user{
@@ -37,109 +37,71 @@ body {
     cursor:pointer
 }
 
-.dropdown-content a{
-    text-decoration: none;
-    color: white;
-}
-.dropdown-content{
-    display: none;
-    
-}
-.dropdown:hover{
-    .dropdown-content{
-        display: block;
-    }
-}
-.dropdown-content a:hover{
-    color: gray;
-    text-shadow: 1px 1px 7px rgb(204, 204, 204);
-}
-.dropdown-content li{
-    padding: 7px 4px;
-    margin-left: 80px;
-}
-
-.dropdown-content ul{
-    list-style-type: none;
-}
 
 
 .logo {
     align-self: center;
-    height: 70px; /* Decreased height */
-    width: 150px; /* Decreased width */
+    height: 70px; 
+    width: 150px; 
     margin-top: 30px;
     border-radius: 5px;
     background-color: #EEEEEE;
-    flex-shrink: 0; /* Prevent the logo from shrinking */
+    flex-shrink: 0; 
     padding: 0; 
 }
-  
+ 
+.cont {
+    display: flex;
+    height:100vh;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons horizontally */
+    justify-content: space-around ;
 
-.contact{
+}
+
+.cont button {
+    font-size: 20px;
+    align-items: center;
+    color: white;
+    background-color: #1891c8;
+    border: 0;
+    font-weight: 700;
+
+}
+
+.cont button:hover {
+    color: rgb(56, 56, 56);
+}
+
+.cont button:nth-child(5) {
     background-color: #EEEEEE;
     color: #1891c8;
     border-radius: 22px;
     text-align: center;
-    width:150px;
+    width: 150px;
     border: 1px solid grey;
-    justify-content: center;
     height: 50px;
-    font-size:20px;
-    margin-left: 45px;
-
+    font-size: 20px;
     border-radius: 5px;
-
-}
-.contact:hover{
-    color:#EEEEEE;
-    background-color:gray;
+    margin-bottom: 10px;
+    font-weight: 400;
+    
 }
 
-.product{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    align-self: center;
-
-}
-.product:hover{
-    color:gray;
-    text-shadow: 1px 1px 7px rgb(204, 204, 204);
-
+.cont button:nth-child(5):hover {
+    color: #EEEEEE;
+    background-color: rgb(56, 56, 56);
+    cursor: pointer;
+    border: none;
 }
 
-
-.impact{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    align-self: center;
-    }
-
-.impact:hover{
-        color: gray;
-        text-shadow: 1px 1px 7px rgb(204, 204, 204);
-    }
-
-.company{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    align-self: center;
-}
-
-.company:hover{
-        color: gray;
-        text-shadow: 1px 1px 7px rgb(204, 204, 204);
-    }
 
     
 
 main {
     border: none;
-    width: 45%;
-    height: 60%;
+    width:700px ;
+    height: 400px;
     position: absolute;
     top: 50%;
     left: 65%;
@@ -157,7 +119,10 @@ main {
     padding: 1rem 1rem 0 1rem;
     text-align: center;
     color: #393E46;
+    min-width: 300px;
+
 }
+
 #login{
     position: relative;
     width: 100%;
@@ -184,7 +149,7 @@ main {
     padding: 0.5rem;
 }
 
-#login-section>form>button {
+#login-section>button {
     border: none;
     width: 50%;
     border-radius: 5px;
@@ -199,9 +164,48 @@ main {
     margin-bottom: 50px;
 }
 
-#login-div>form>button:hover {
-    background-color: #92C7CF;
+#login-section>button:hover {
+    background-color: #046a99;
     cursor: pointer;
-
 }
 
+@media screen and (max-width : 670px) {
+    body {
+        height: fit-content;
+    }
+
+
+    main {
+        border: none;
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #F7F7F7;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        display: flex;
+        flex-direction: column;
+    }
+    .head{
+        display: none;
+    }
+
+   
+   #login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top:70px;
+    padding-left:120px;
+    background-color: #EEEEEE;
+}
+
+#login>img {
+    width: 60%;
+}
+
+    
+}
